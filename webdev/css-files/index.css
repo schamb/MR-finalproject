@@ -5,14 +5,14 @@
 body {
     font-family: Georgia;
     padding: 10px;
-    background: white;
+    background: #e2dece;
 }
 
 /* Header/Blog Title */
 .header {
     padding: 5px;
     text-align: center;
-    background: white;
+    background: #e2dece;
 }
 
 .header h1 {
@@ -30,6 +30,7 @@ body {
     position: sticky;
     top: 0;
     font-family: Georgia;
+    height: 45px;
 }
 
 /* Style the topnav links */
@@ -63,7 +64,7 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: white;
+    background-color: #e2dece;
     padding-left: 20px;
     font-family: Georgia;
 }
@@ -78,7 +79,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-    background-color: #e2dcce;
+    background-color: #f4f2e8;
     padding: 20px;
     margin-top: 20px;
     color: #373737;
@@ -120,7 +121,7 @@ body {
 }
 #tipstricks{
   overflow: scroll;
-  background-color: white;
+  background-color: #e3e8ef;
   height: 300px;
   text-align: center;
 }
@@ -128,8 +129,10 @@ body {
   overflow: scroll;
   height: 400px;
   text-align: center;
-  background-color: white;
+  background-color: #F7F7E8;
   border-radius: 5px;
+  border: 2px #e2dece;
+  border-style: double;
 }
 #he2{
   text-align: center;
