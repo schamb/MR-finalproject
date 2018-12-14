@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: Georgia;
     padding: 10px;
     background: white;
 }
@@ -29,6 +29,7 @@ body {
     background-color: #C0B283;
     position: sticky;
     top: 0;
+    font-family: Georgia;
 }
 
 /* Style the topnav links */
@@ -54,6 +55,8 @@ body {
 .leftcolumn {
     float: left;
     width: 75%;
+    text-align: center;
+    font-family: Georgia;
 }
 
 /* Right column */
@@ -62,6 +65,7 @@ body {
     width: 25%;
     background-color: white;
     padding-left: 20px;
+    font-family: Georgia;
 }
 
 /* Fake image */
@@ -79,6 +83,7 @@ body {
     margin-top: 20px;
     color: #373737;
     border: 1px solid #ddd;
+    font-family: Georgia;
 
 }
 
@@ -91,7 +96,7 @@ body {
 
 /* Footer */
 .footer {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     background: #ddd;
     margin-top: 20%;
@@ -123,16 +128,21 @@ body {
   height: 400px;
   text-align: center;
   background-color: white;
+  border-radius: 5px;
 }
 #he2{
   text-align: center;
+  font-size: 25px;
+
 }
 img{
-  border: 1px solid #ddd;
+  border: 2px solid #5F5555;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 80%;
+  margin-top: 5%;
+  border-radius: 5px;
 
 }
 #acolor{
@@ -140,8 +150,8 @@ img{
 }
 button{
   border: none;
-  font-family: Arial;
-  border-radius: 0;
+  font-family: Georgia;
+  border-radius: 5px;
   height: 20px;
   color: #f3f3f3;
   background-color: #C0B283;
@@ -156,4 +166,74 @@ button:hover{
   /* float: left; */
   border: none;
   /* display: inline-block; */
+}
+#sold{
+  width: 200px;
+  height: 175px;
+}
+#mainStory{
+  border: 1px solid #ddd;
+
+}
+p{
+  font-family: Georgia;
+}
+h5{
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: lighter;
+}
+h4{
+  font-size: 15px;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  font-weight:bolder;
+}
+marquee{
+  font-family: Georgia;
+}
+#moreMagnets{
+  display: none;
+}
+#moreIce{
+  display: none;
+}
+#moreCarpet{
+  display: none;
+}
+#moreDeal{
+  display: none;
+}
+#moreGold{
+  display: none;
+}
+#moreCoin{
+  display: none;
+}
+#moreUr{
+  display: none;
+}
+#moreSl{
+  display: none;
+}
+#moreMe{
+  display: none;
+}
+#urButton{
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+}
+#meButton{
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+}
+#slButton{
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+}
+#mainT{
+  font-size: 17px;
 }

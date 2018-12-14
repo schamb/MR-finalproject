@@ -10,14 +10,14 @@
     <div class="header">
 
       <h1><img id="sunset" src="webdev/images/sunseticon.png" alt="sunset icon">Macondo Today</h1>
-      <p id="acolor">welcme to a boring website with no colors</p>
+      <p id="acolor">Bringing you the latest news in Macondo</p>
 </div>
 <p></p>
 <marquee> BREAKING NEWS: im dead inside </marquee>
 <p></p>
 
 <div class="topnav">
-  <a href="webdev/html-files/secondpage.html">CLICK ME</a>
+  <a href="#">Click</a>
   <a href="#">this button doesnt work</a>
   <a href="#">neither does this one</a>
   <a href="#" style="float:right">button over here too</a>
@@ -26,39 +26,63 @@
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>ÚRSULA FOUND ANOTHER TOWN YEE HAW</h2>
-      <h5>when? TODAY</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p><button>READ MORE</button></p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Life beyond Macondo?</h2>
+      <h5>• What Úrsla found on her search for her son •</h5>
+      <div><p><img id="mainStory" src="webdev/images/town.jpg" alt="sunset icon"></p></div>
+      <p></p>
+      <p></p>
+      <span id="urDots"></span>
+      <span id="moreUr"><p id="mainT">Úrsla doesn't find who she's looking for during her 5 month search for her son, José Arcadio, but she finds just about everyone else. Her journey lead to a whole new community, just a two-day trip to the other side of the swamp!</p></span>
+      <p><button onclick="showUr()" id="urButton">Read More</button></p>
     </div>
     <div class="card">
-      <h2>No one can sleep</h2>
-      <h5>YEET</h5>
-      <div class="fakeimg" style="height:200px;">WOW</div>
-      <p><button>READ MORE</button></p>
-      <p>Trouble sleeping? thats bc you are plagued ;)</p>
+      <h2>Not So Silent Night</h2>
+      <h5>• New sleepless plague hits Macondo •</h5>
+      <div><img id="mainStory" src="webdev/images/nightparty.jpeg" alt="sunset icon"></div>
+      <p></p>
+      <p></p>
+      <span id="slDots"></span>
+      <span id="moreSl"><p id="mainT">Trouble sleeping? A new insomnia plague has taken over Mocando! Symptoms include never sleeping without feeling tired and memory loss. Some are lableing items in their homes to stay sharp. What will you do?</p></span>
+      <p><button onclick="showSl()" id="slButton">Read More</button></p>
     </div>
     <div class="card">
-      <h2>NO THERES THEE</h2>
-      <h5>YEET</h5>
-      <div class="fakeimg" style="height:200px;">WOW</div>
-      <p><button>READ MORE</button></p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>The End of a Legacy</h2>
+      <h5>• Macondo's favorite Gypsy rests in peace •</h5>
+      <div><img id="mainStory" src="webdev/images/yes.jpeg" alt="boop"></div>
+      <p></p>
+      <p></p>
+      <span id="meDots"></span>
+      <span id="moreMe"><p id="mainT">Melquíadies, a close friend of José Arcadio Buendía and the beloved gypsy that brought us magnets and alchemy has peacefully passed away. Melquiadies was the first to die in Mocando, and hopefully the last. </p></span>
+      <p><button onclick="showMe()" id="meButton">Read More</button></p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2 id="he2">José's Tips and Tricks</h2>
-      <div id="tipstricks">
-      <div class="fakeimg" style="height:100px;">alchemy stuff??</div>
-      <p>Sed ut perspiciatis unde omnis iste natus error</p>
+      <div id="trending">
+        <div><img id="sold" src="webdev/images/sold.jpeg" alt="yeet"></div>
+        <p><h4>Deal or No Deal? A complete guide to the Gypsy Market</h4></p>
+        <span id = "dealDots"></span>
+        <span id="moreDeal"> Do you ever feel like you're paying a little too much? Here's how to get the most bang for your buck!</span>
+        <p><button onclick="showDeal()" id="dealButton">Read More</button></p>
+        -------------------------------------------
 
-      <div class="fakeimg" style="height:100px;">wow</div>
-      <p>Sed ut perspiciatis unde omnis iste natus error</p>
+        <div><img src="webdev/images/gold.jpeg" alt="boop"></div>
+        <p><h4>Try these three tricks and you'll be OVERFLOWING with gold!</h4></p>
+        <span id = "goldDots"></span>
+        <span id="moreGold">Alchemy can be tricky, and that's why experts like me are here to help! If you take my advice, you'll have buckets of gold in no time!</span>
+        <p><button onclick="showGold()" id="goldButton">Read More</button></p>
+        -------------------------------------------
+      <div><img src="webdev/images/newcoins.jpg" style="width:200px;height:175px" alt="yahh"></div>
+      <p><h4>So you melted your wife's last coins... What's next?</h4></p>
+      <span id = "coinDots"></span>
+      <span id="moreCoin"> Sometimes, even with the best intentions, our projects can turn into a sticky mess at the bottom of a pot. And then you have to tell your wife...</span>
+      <p><button onclick="showCoin()" id="coinButton">Read More</button></p>
+      -------------------------------------------
 
-      <div class="fakeimg" style="height:100px;">yeet</div>
-      <p>Sed ut perspiciatis unde omnis iste natus error</p>
+
+
+
       </div>
     </div>
     <div>
@@ -66,26 +90,38 @@
       <h2 id="he2">Trending</h2>
       <div id="trending">
         <div><img src="webdev/images/ice.jpeg"></a></div>
-        <p>Ice Ice Baby!</p>
-        <p><button>more</button></p>
+        <p><h4>Ice Ice Baby!</h4></p>
+        <span id="iceDots"></span>
+        <span id="moreIce">This beautiful rock is clear as glass and pretty as a diamond but feels boiling when touched. Only five reals to touch it!</span>
+        <p><button onclick="showIce()" id="iceButton">Read More</button></p>
+        -------------------------------------------
         <div><img src="webdev/images/magnet.jpg"></div>
-        <p>Magnets! (not for gold)</p>
-        <p><button>more</button></p>
-        <div><img src="webdev/images/carpet.jpeg"></div>
-        <p>magic carpet!!11!1!!1!!</p>
-        <p><button>more</button></p>
+        <p><h4>A Strong Attraction</h4></p>
+        <span id="magDots"></span>
+        <span id="moreMagnets">These new rocks called Magnets make all your metal possesions come straight to you!
+        <div>(WARNING: Magnets don't work on coin!)</div></span>
+        <p><button onclick="showMag()" id="magnetButton">Read More</button></p>
+        -------------------------------------------
+        <div><img src="webdev/images/carpeet.jpg"></div>
+        <p><h4>Ride With Me...</h4></p>
+        <span id="carpDots"></span>
+        <span id="moreCarpet">This flying carpet can get you all around town in a snap. You can soar over Macondo and enjoy the viewfor the best weekend fun!</span>
+        <p><button onclick="showCarp()" id="carpetButton">Read More</button></p>
+        -------------------------------------------
       </div>
     </div>
     <div class="card">
-      <h2 id="he2">Events</h2>
+      <h2 id="he2">What's Happening Now</h2>
       <div id="trending">
-        <div class="fakeimg" style="height:100px;"></div>
-        <p>come watch this lady get her head chopped off</p>
-        <div class="fakeimg" style="height:100px;"></div>
-        <p>guy turns into snake again</p>
-
-        <div class="fakeimg" style="height:100px;"></div>
-        <p>uhhh</p>
+        <div><img src="webdev/images/head.png" alt="h" style="height:250px"></div>
+        <p><h4>This lady is gonna get her head chopped off!</h4></p>
+        <p></p>
+        -------------------------------------------
+        <div><img src="webdev/images/snake.jpeg"></div>
+        <p><h4>Guy keeps turning into snake! Watch him at the gypsy tent!</h4></p>
+        <p></p>
+        -------------------------------------------
+        <p>More events coming soon...</p>
       </div>
     </div>
 
@@ -93,8 +129,166 @@
 
 
 <div class="footer">
-  <h2><i> fancy feast </i> </h2>
+  <h2><i>  </i> </h2>
 </div>
+<script>
+function showMag() {
+  // magnet var
+  var magDots = document.getElementById("magDots");
+  var moreMagnets = document.getElementById("moreMagnets");
+  var magnetButton = document.getElementById("magnetButton");
+
+  if (magDots.style.display === "none") {
+    magDots.style.display = "inline";
+    magnetButton.innerHTML = "Read more";
+    moreMagnets.style.display = "none";
+  } else {
+    magDots.style.display = "none";
+    magnetButton.innerHTML = "Read less";
+    moreMagnets.style.display = "inline";
+  }
+}
+function showIce() {
+  // ice
+  var iceDots = document.getElementById("iceDots");
+  var moreIce = document.getElementById("moreIce");
+  var iceButton = document.getElementById("iceButton");
+
+
+  if (iceDots.style.display === "none") {
+    iceDots.style.display = "inline";
+    iceButton.innerHTML = "Read more";
+    moreIce.style.display = "none";
+  } else {
+    iceDots.style.display = "none";
+    iceButton.innerHTML = "Read less";
+    moreIce.style.display = "inline";
+    }
+}
+function showCarp() {
+    // Magic Carpet
+    var carpDots = document.getElementById("carpDots");
+    var moreCarpet = document.getElementById("moreCarpet");
+    var carpetButton = document.getElementById("carpetButton");
+
+
+    if (carpDots.style.display === "none") {
+      carpDots.style.display = "inline";
+      carpetButton.innerHTML = "Read more";
+      moreCarpet.style.display = "none";
+    } else {
+      carpDots.style.display = "none";
+      carpetButton.innerHTML = "Read less";
+      moreCarpet.style.display = "inline";
+      }
+
+}
+function showDeal() {
+    // Deal
+    var dealDots = document.getElementById("dealDots");
+    var moreDeal = document.getElementById("moreDeal");
+    var dealButton = document.getElementById("dealButton");
+
+
+    if (dealDots.style.display === "none") {
+      dealDots.style.display = "inline";
+      dealButton.innerHTML = "Read more";
+      moreDeal.style.display = "none";
+    } else {
+      dealDots.style.display = "none";
+      dealButton.innerHTML = "Read less";
+      moreDeal.style.display = "inline";
+      }
+
+}
+function showGold() {
+    // Gold
+    var goldDots = document.getElementById("goldDots");
+    var moreGold = document.getElementById("moreGold");
+    var goldButton = document.getElementById("goldButton");
+
+
+    if (goldDots.style.display === "none") {
+      goldDots.style.display = "inline";
+      goldButton.innerHTML = "Read more";
+      moreGold.style.display = "none";
+    } else {
+      goldDots.style.display = "none";
+      goldButton.innerHTML = "Read less";
+      moreGold.style.display = "inline";
+      }
+
+}
+function showCoin() {
+    // Coin
+    var coinDots = document.getElementById("coinDots");
+    var moreCoin = document.getElementById("moreCoin");
+    var coinButton = document.getElementById("coinButton");
+
+
+    if (coinDots.style.display === "none") {
+      coinDots.style.display = "inline";
+      coinButton.innerHTML = "Read more";
+      moreCoin.style.display = "none";
+    } else {
+      coinDots.style.display = "none";
+      coinButton.innerHTML = "Read less";
+      moreCoin.style.display = "inline";
+      }
+
+}
+function showUr() {
+  // ice
+  var urDots = document.getElementById("urDots");
+  var moreUr = document.getElementById("moreUr");
+  var urButton = document.getElementById("urButton");
+
+
+  if (urDots.style.display === "none") {
+    urDots.style.display = "inline";
+    urButton.innerHTML = "Read more";
+    moreUr.style.display = "none";
+  } else {
+    urDots.style.display = "none";
+    urButton.innerHTML = "Read less";
+    moreUr.style.display = "inline";
+    }
+}
+function showSl() {
+  // sleep
+  var slDots = document.getElementById("slDots");
+  var moreSl = document.getElementById("moreSl");
+  var slButton = document.getElementById("slButton");
+
+
+  if (slDots.style.display === "none") {
+    slDots.style.display = "inline";
+    slButton.innerHTML = "Read more";
+    moreSl.style.display = "none";
+  } else {
+    slDots.style.display = "none";
+    slButton.innerHTML = "Read less";
+    moreSl.style.display = "inline";
+    }
+}
+function showMe() {
+  // sleep
+  var meDots = document.getElementById("meDots");
+  var moreMe = document.getElementById("moreMe");
+  var meButton = document.getElementById("meButton");
+
+
+  if (meDots.style.display === "none") {
+    meDots.style.display = "inline";
+    meButton.innerHTML = "Read more";
+    moreMe.style.display = "none";
+  } else {
+    meDots.style.display = "none";
+    meButton.innerHTML = "Read less";
+    moreMe.style.display = "inline";
+    }
+}
+</script>
 
   </body>
 </html>
