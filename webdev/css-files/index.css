@@ -78,12 +78,13 @@ body {
 
 /* Add a card effect for articles */
 .card {
-    background-color: #f4efe8;
+    background-color: #e2dcce;
     padding: 20px;
     margin-top: 20px;
     color: #373737;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     font-family: Georgia;
+    border-radius: 5px;
 
 }
 
